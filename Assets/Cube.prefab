@@ -1,0 +1,25 @@
+{
+  "RootObject": {
+    "__guid": "4686ee1e-bf1d-4063-a003-295aa1b76ce1",
+    "Flags": 0,
+    "Name": "Cube",
+    "Position": "-126.4292,-187.5311,115.5769",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "e8f29910-ca66-4159-936b-042936c1c86b",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/dev/box.vmdl",
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

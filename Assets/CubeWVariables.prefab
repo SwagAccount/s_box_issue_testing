@@ -1,0 +1,37 @@
+{
+  "RootObject": {
+    "__guid": "f2582f3b-7ded-45b4-8616-9157ce4cc84e",
+    "Flags": 0,
+    "Name": "cubewvariables",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "8c055b2e-2494-434f-8ea0-324f71c14f8c",
+        "BodyGroups": 18446744073709551615,
+        "Model": "models/dev/box.vmdl",
+        "RenderType": "On",
+        "Tint": "1,0,0,1"
+      }
+    ],
+    "Children": [],
+    "__variables": [
+      {
+        "Id": "tint",
+        "Title": "tint",
+        "Targets": [
+          {
+            "Id": "8c055b2e-2494-434f-8ea0-324f71c14f8c",
+            "Property": "Tint"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
