@@ -45,6 +45,7 @@
           "Feathering": 0.02,
           "FrameInterval": 5,
           "MaxDistance": 512,
+          "MultiBounce": false,
           "Projection": "Sphere",
           "RenderDynamically": false,
           "TintColor": "1,1,1,1",
@@ -67,6 +68,12 @@
           "BodyGroups": 18446744073709551615,
           "MaterialOverride": "materials/default.vmat",
           "Model": "models/dev/plane.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "RenderType": "On",
           "Tint": "0.39546,0.51163,0.27128,1"
         },
@@ -138,6 +145,7 @@
           "__type": "Sandbox.Tonemapping",
           "__guid": "9d76f362-7227-40eb-a189-69353c780c46",
           "__version": 1,
+          "AutoExposureEnabled": true,
           "ExposureBias": 2,
           "ExposureCompensation": 0,
           "ExposureMethod": "RGB",
@@ -154,16 +162,73 @@
       ]
     },
     {
-      "__guid": "cbcd115f-fcbc-4241-8240-649fe1a2ead1",
+      "__guid": "5f5dce50-4faa-4f7b-9592-aa26e516b1da",
       "Flags": 0,
-      "Name": "PrefabSpawner",
-      "Position": "-126.4292,-187.5311,115.5769",
+      "Name": "Object",
+      "Position": "0,0,75.30313",
       "Enabled": true,
       "Components": [
         {
-          "__type": "PrefabSpawner",
-          "__guid": "4703c012-5a3e-400f-903c-9b33976c9aa6",
-          "File": "cube.prefab"
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "52d4b8c6-8828-4057-afa3-43c9371818c3",
+          "AngularDamping": 0,
+          "Gravity": false,
+          "LinearDamping": 0,
+          "Locking": {},
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": false,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "23694aa7-4cc8-459b-9bb4-179baf3b3fa3",
+      "Flags": 0,
+      "Name": "Object (1)",
+      "Position": "0,0,42.01506",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "2971d460-f7ce-49ec-960f-3f55f81f6dfc",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "__guid": "60e0e422-d17e-4fa0-bd85-257522b0b2ef",
+      "Flags": 0,
+      "Name": "Object",
+      "Position": "102.542,122.189,-39.30124",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "JointTester",
+          "__guid": "5d73249c-cf78-4c0d-b349-8f87ff1672e2",
+          "object1": {
+            "_type": "component",
+            "component_id": "52d4b8c6-8828-4057-afa3-43c9371818c3",
+            "go": "5f5dce50-4faa-4f7b-9592-aa26e516b1da",
+            "component_type": "Rigidbody"
+          },
+          "object2": {
+            "_type": "component",
+            "component_id": "2971d460-f7ce-49ec-960f-3f55f81f6dfc",
+            "go": "23694aa7-4cc8-459b-9bb4-179baf3b3fa3",
+            "component_type": "Rigidbody"
+          }
         }
       ]
     }
@@ -173,6 +238,7 @@
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
     "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -193,5 +259,6 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [],
+  "IsValid": true,
   "__version": 1
 }
